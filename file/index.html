@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const test = () => {
+            const name = document.getElementById('name').value
+            const age = document.getElementById('age').value
+            let result = document.getElementById('result')
+
+            result.innerText = `Name: ${name}
+            Age: ${age}`
+        }
+    </script>
+    <div>
+        <label>Name: <input type="text" id="name"></label>
+        <br>
+        <label>Age: <input type="number" id="age"></label>
+        <br>
+        <input type="button" value="OK" onclick="test()">
+    </div>
+
+    <p id="result"></p>
+</body>
+</html>
